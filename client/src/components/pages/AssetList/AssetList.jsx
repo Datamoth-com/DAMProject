@@ -1,5 +1,5 @@
 import React from 'react'
-import { AssetCard } from '../../AssetCard/AssetCard'
+import { AssetCard } from '../../AssetCard/AssetCard';
 
 const AssetList = () => {
   return (
