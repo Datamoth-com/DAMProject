@@ -14,16 +14,10 @@ const Asset = () => {
                 <h3>Serial Number: Number</h3>     
                 <h3>Asset Type: Type</h3>     
                 <h3>Description: wzesxrdctfvyftgvuybhinjuok</h3>
-
-
-   
             </div>
           <div className='row'>   {/*Time line part*/}
-
           </div>
-
         </div>
-
       </div>
     </div>
   )
