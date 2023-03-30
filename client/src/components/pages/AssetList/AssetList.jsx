@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AssetList = () => {
+const AssetList = () => {
   return (
     <div>AssetList
 
@@ -8,3 +8,4 @@ export const AssetList = () => {
     </div>
   )
 }
+export default AssetList;
