@@ -35,7 +35,6 @@ function App() {
           <Route exact path="/assetList" element={<AssetList/>} />
           <Route exact path="/asset" element={<Asset/>} />
           <Route exact path="/history" element={<TransHist />} />
-
           <Route exact path="/login" element={<LoginSignUp />} />
         </Routes>
         <Footer />
