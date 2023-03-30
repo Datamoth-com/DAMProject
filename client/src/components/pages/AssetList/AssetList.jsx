@@ -1,7 +1,7 @@
 import React from 'react'
 import { AssetCard } from '../../AssetCard/AssetCard'
 
-export const AssetList = () => {
+const AssetList = () => {
   return (
     <div>AssetList
         <div className='container'> 
@@ -17,3 +17,4 @@ export const AssetList = () => {
     </div>
   )
 }
+export default AssetList;

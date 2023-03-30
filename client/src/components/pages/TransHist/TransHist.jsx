@@ -1,7 +1,8 @@
 import React from 'react'
-
-export const TransHist = () => {
+const TransHist = () => {
   return (
     <div>TransHist</div>
   )
 }
+
+export default TransHist;

@@ -25,7 +25,9 @@ const Navbar = () => {
                         <Link to="/create">
                             <button className='btn btn-outline-success me-2'>Create</button>
                         </Link>
-                        <button className="btn btn-primary">Login</button>
+                        <Link to="/login">
+                            <button className="btn btn-primary">Login</button>
+                        </Link>
                     </div>
                 </div>
             </nav>
