@@ -27,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+     
       <Router>
       <Navbar />
         <Routes>
@@ -37,7 +38,7 @@ function App() {
           <Route exact path="/history" element={<TransHist />} />
           <Route exact path="/login" element={<LoginSignUp />} />
         </Routes>
-        <Footer />
+       <  Footer />
       </Router>
     </div>
   )
