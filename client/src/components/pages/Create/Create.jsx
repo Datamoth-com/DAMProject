@@ -4,7 +4,7 @@ const Create = () => {
   return (
     <div>
 
-      <div className="container">
+      <div className="container border border-primary">
 
 
         <form method='POST'>
