@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -21,6 +22,9 @@ const Navbar = () => {
                                 <a className="nav-link active" aria-current="page" href="/">Transaction History</a>
                             </li>
                         </ul>
+                        <Link to="/create">
+                            <button className='btn btn-outline-success me-2'>Create</button>
+                        </Link>
                         <button className="btn btn-primary">Login</button>
                     </div>
                 </div>
@@ -29,4 +33,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
