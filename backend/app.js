@@ -22,9 +22,9 @@ const user = require('./routes/userRoute');
 const bodyParser = require('body-parser');
 
 // Assigning Routes
-app.use("/api", product);
+// app.use("/api", product);
 app.use("/api", user);
-app.use("/api", order);
+// app.use("/api", order);
 
 // MiddleWare for Error
 app.use(errorMiddleware);
