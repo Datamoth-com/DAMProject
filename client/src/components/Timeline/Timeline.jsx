@@ -9,7 +9,8 @@ export const Timeline = () => {
     
        <Tcard/>
        <Tcard/>
-      
+       <Tcard/>
+       <Tcard/>
         
 
         {/* tcard component for generating cards in time line */}
