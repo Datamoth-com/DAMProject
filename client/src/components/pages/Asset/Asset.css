@@ -10,3 +10,67 @@ img {
  
   height: 120px; ;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Height of the cut*/
+  --cut: 100px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+section {
+  background-color: #ffffff;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  color: #404040;
+  background-color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading{
+  font-size: 70px;
+  font-weight: 600;
+  font-family:'Times New Roman', Times, serif;
+  background-image: linear-gradient(to RIGHT bottom, #000000, #eef7f1);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text
+}
+
+
+
+.tilt {
+  background: linear-gradient(to RIGHT bottom, #1d976c, #93f9b9);
+  /* Clip the bottom part of this section*/
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut)));
+  /* Higher z-index value than next section */
+  z-index: 3;
+  position: relative;
+}
+.last {
+  
+  
+  margin-top: calc(var(--cut) * -1);
+}
+
+@media screen and (max-width: 768px) {
+  section h1 {
+    font-size: 2rem;
+  }
+}

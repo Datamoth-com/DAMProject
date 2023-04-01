@@ -1,8 +1,9 @@
 import React from 'react'
+import { Timeline } from '../../Timeline/Timeline';
 import "./Asset.css"
 const Asset = () => {
   return (
-    <div>
+    <div>  <section class="tilt">
       <div className='container'>
         <div className='row m-4 d-flex card-body row1 '>  {/*  Asset details */}
               <div className='col'>
@@ -18,13 +19,21 @@ const Asset = () => {
 
    
             </div>
-          <div className='row'>   {/*Time line part*/}
-
-          </div>
-
+         
         </div>
 
+      </div>   
+      
+
+    
+  
+</section>
+      <div>
+        <h1 className='heading'>Asset Ownership Timeline</h1>
+        <Timeline/>
       </div>
+
+
     </div>
   )
 }
