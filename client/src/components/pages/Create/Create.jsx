@@ -2,9 +2,9 @@ import React from 'react'
 
 const Create = () => {
   return (
-    <div>
+    <div><br></br>
 
-      <div className="container border border-primary">
+      <div className="container border border-5 rounded-5">
 
 
         <form method='POST'>
@@ -47,8 +47,8 @@ const Create = () => {
           </div>
           <br></br>
           <div>
-            <input className="btn btn-primary" type="submit" value="Submit"></input>
-          </div>
+            <input className="btn btn-primary" type="submit" value="Submit"/>
+          </div><br></br>
         </form></div>
 
 
