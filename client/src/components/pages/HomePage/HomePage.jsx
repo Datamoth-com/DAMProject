@@ -7,6 +7,7 @@ import { ConnectWallet} from "@thirdweb-dev/react";
 
 
 
+
 const HomePage = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const HomePage = () => {
                 <ConnectWallet />
           </div>
         </div>
+       
       </div>
     </>
   )
