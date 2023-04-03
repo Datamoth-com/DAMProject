@@ -13,12 +13,12 @@ const HomePage = () => {
       <div className='GreyBG'> 
         <Carousal />
         <div className='container p-5 '>
-          <div className='d-flex'><h1>What does D.A.M. do?</h1></div>
           <div className='d-flex'>
-            <h4>The Decentralized Asset Manager in a application that helps people to create,transfer and manage their assets </h4>
-                <ConnectWallet/>
-
-            
+          <h1 style={{textTransform: "uppercase", margin: '1rem'}}>What does D.A.M. do?</h1>
+          </div>
+          <div className='d-flex' style={{margin: '3rem'}}>
+            <h5>The Decentralized Asset Manager in a application that helps people to create,transfer and manage their assets </h5>
+                <ConnectWallet />
           </div>
         </div>
       </div>
