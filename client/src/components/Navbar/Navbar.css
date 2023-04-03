@@ -1,0 +1,17 @@
+.CWbtn{
+    height: 3rem !important;
+}
+.NLink{
+    text-decoration: none;
+    font-size: 1.1vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0.01vmax;
+    transition: all 0.5s;
+    position: absolute;
+    padding-top: 1rem;
+
+}
+.NLink:hover{
+    color: crimson;
+}

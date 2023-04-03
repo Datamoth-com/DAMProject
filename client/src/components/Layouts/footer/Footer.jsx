@@ -9,12 +9,13 @@ const Footer = () => {
     return (
         <footer id='footer'>
             <div className="leftFooter">
-                <Link to="/" style={{textDecoration: "none", color: 'white'}}>
+              
+                <Link to="/" className='LFlink'>
                     <p>HOME</p>
                 </Link>
-                <Link to="/assetList" style={{textDecoration: "none", color: 'white'}}><p>ASSETS</p></Link>
-                <Link to="/history" style={{textDecoration: "none", color: 'white'}}><p>HISTORY</p></Link>
-                <Link to="/create" style={{textDecoration: "none", color: 'white'}}><p>CREATE</p></Link>
+                <Link to="/assetList" className='LFlink'><p>ASSETS</p></Link>
+                <Link to="/history"  className='LFlink'><p>HISTORY</p></Link>
+                <Link to="/create"  className='LFlink'><p>CREATE</p></Link>
             </div>
             <div className="midFooter">
                 <h1>D.A.M.</h1>

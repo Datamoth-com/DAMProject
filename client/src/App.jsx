@@ -28,8 +28,8 @@ function App() {
     }, []);
 
   return (
-    <div className="App">
-     
+    <div className="App GreyBG">
+      
       <Router>
       <Navbar />
         <Routes>

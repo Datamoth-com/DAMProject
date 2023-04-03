@@ -4,7 +4,6 @@ import "./Asset.css"
 import { Link } from 'react-router-dom';
 
 
-
 const Asset = () => {
   return (
     <div>  <section class="tilt">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 export const AssetCard = () => {
   return (
-    <div className='mb-3'><div className="card ">
+    <div className='mb-3'><div className="card">
       <h5 className="card-header">Asset Id</h5>
       <div className="card-body row  d-flex ">
         <div className='col-8'>
