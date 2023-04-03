@@ -14,6 +14,7 @@ import Footer from "./components/Layouts/footer/Footer"
 // Fonts
 import WebFont from "webfontloader";
 import TransferPage from './components/pages/TransferPage/TransferPage';
+import { Test } from './components/pages/Test/Test';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route exact path="/history" element={<TransHist />} />
           <Route exact path="/login" element={<LoginSignUp />} />
           <Route exact path="/Transfer" element={<TransferPage/>}/>
+          <Route exact path="/Test" element={<Test  />}/>
         </Routes>
        <  Footer />
       </Router>

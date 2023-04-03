@@ -2,6 +2,9 @@ import React from 'react'
 import { Timeline } from '../../Timeline/Timeline';
 import "./Asset.css"
 import { Link } from 'react-router-dom';
+
+
+
 const Asset = () => {
   return (
     <div>  <section class="tilt">
@@ -27,7 +30,7 @@ const Asset = () => {
 
    
             </div>
-         
+           
         </div>
 
       </div>   
