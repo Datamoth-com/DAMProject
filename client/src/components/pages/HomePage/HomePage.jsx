@@ -11,7 +11,7 @@ import { ConnectWallet} from "@thirdweb-dev/react";
 const HomePage = () => {
   return (
     <>
-      <div className='GreyBG'> 
+      <div > 
         <Carousal />
         <div className='container p-5 '>
           <div className='d-flex'>
@@ -22,7 +22,7 @@ const HomePage = () => {
                 <ConnectWallet />
           </div>
         </div>
-       
+        
       </div>
     </>
   )

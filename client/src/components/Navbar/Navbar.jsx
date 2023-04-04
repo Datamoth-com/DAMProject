@@ -6,7 +6,8 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+       
+            <nav className="navbar navbar-expand-lg navbg  sticky-top  ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/" style={{fontFamily: 'Times New Roman', color: "crimson"}}>D.A.M.</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
