@@ -8,7 +8,7 @@ const Asset = () => {
   return (
     <div>  <section class="tilt">
       <div className='container'>
-        <div className='row m-4 d-flex card-body row1 '>  {/*  Asset details */}
+        <div className='row m-4 d-flex card-body row1'>  {/*  Asset details */}
               <div className='col'>
                 <img src='http://picsum.photos/300/200' className='img-thumbnail' ></img> {/*asset image*/}
               </div>

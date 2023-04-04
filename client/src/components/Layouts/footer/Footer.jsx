@@ -18,7 +18,7 @@ const Footer = () => {
                 <Link to="/create"  className='LFlink'><p>CREATE</p></Link>
             </div>
             <div className="midFooter">
-                <h1>D.A.M.</h1>
+                <h1 className='fancy'>D.A.M.</h1>
                 <br />
                 <h2>Decentralized Asset Manager</h2>
                 <p>Copyright 2023 &copy; DataMoth.com</p>

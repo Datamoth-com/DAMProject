@@ -4,11 +4,43 @@
   .row{
     height:10rem;
   }
-  .Cardd{
-    background: rgba(255, 255, 255, 0.49);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.2px);
--webkit-backdrop-filter: blur(3.2px);
+.card{
+  width:18rem;
+  height: 40rem;
+  justify-content: center;
+  
+}
+  .card-image {
+    background-color: #ffcaa6;
+    height: 100%;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  
+    border-radius: .5rem;
+    transition: .3s ease;
+    }
+    .card-content {
+      font-size: .9em;
+      padding-bottom: 10px;;
+      
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 8px;
+    }
+    .card-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .card:hover {
+    box-shadow: 0 14px 28px rgb(6, 255, 234), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+    }
 
-  }
+    

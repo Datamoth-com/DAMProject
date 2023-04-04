@@ -20,6 +20,7 @@ const HomePage = () => {
           <div className='d-flex' style={{margin: '3rem'}}>
             <h5>The Decentralized Asset Manager in a application that helps people to create,transfer and manage their assets </h5>
                 <ConnectWallet />
+                
           </div>
         </div>
         

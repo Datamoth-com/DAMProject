@@ -5,7 +5,7 @@ import { TransHistCard } from '../../TransHistCard/TransHistCard'
 
 export const TransHist = () => {
   return (
-    <div>Transhistory
+    <div className='d-flex flex-wrap'>
 
       <TransHistCard/>
       <TransHistCard/>
