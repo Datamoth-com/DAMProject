@@ -2,7 +2,6 @@ import React from 'react'
 import "./homePage.css";
 import { Carousal } from '../../Carousal/Carousal';
 import { Link } from 'react-router-dom';
-import { ImgOverText } from '../../ImgOverText/ImgOverText';
 
 
 
@@ -30,7 +29,7 @@ const HomePage = () => {
     </div>
   
 
-<div><ImgOverText/></div>
+
     <div><Carousal /></div>
     
 

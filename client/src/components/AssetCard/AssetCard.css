@@ -54,7 +54,6 @@
       line-height: 1.5;
     }
     .card:hover {
-      border: 1px solid black;
       transform: scale(1.05);
     
     }
