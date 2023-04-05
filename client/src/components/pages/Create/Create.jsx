@@ -13,12 +13,12 @@ const Create = () => {
           <br />
           <div className="mb-3 w-10">
             <label htmlFor="exampleFormControlInput1" className="form-label text-white">Asset Name:</label>
-            <input type="text" className="form-control " id="exampleFormControlInput1" placeholder="name" />
+            <input type="text" className="form-control " id="exampleFormControlInput1" placeholder="Name" />
           </div>
 
           <div className="mb-3">
             <label htmlFor="exampleFormControlInput1" className="form-label text-white">Serial Number:</label>
-            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="name" />
+            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Serial No." />
           </div>
 
           <div className='mb-3'>

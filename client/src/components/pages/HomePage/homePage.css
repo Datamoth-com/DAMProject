@@ -37,7 +37,16 @@
     letter-spacing: 1.3px;
     padding: 16px 40px;
     text-decoration: none;
+    border-radius: 0.5rem;
     text-transform: uppercase;
+  }
+
+  .btn-main:hover{
+    color: crimson;
+  }
+
+  .btn-default:hover{
+    color: crimson;
   }
   
   .btn-default {

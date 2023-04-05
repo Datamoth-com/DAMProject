@@ -43,6 +43,7 @@ section h1 {
 .heading{
   font-size: 5rem;
   font-weight: 600;
+  text-align: center;
   font-family:'Raleway', sans-serif;
   background-image: linear-gradient(to RIGHT bottom, #000000, #eef7f1);
   color: transparent;

@@ -3,22 +3,25 @@
 }
 .NLink{
     text-decoration: none;
-    font-size: 1.1vmax;
+    font-size: 1.8rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: #03c8a8;
     margin: 0.01vmax;
     transition: all 0.5s;
-    position: absolute;
-    padding-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 2rem;
+ 
+    padding: 0.2rem;
 
 }
 .NLink:hover{
-    color: crimson;
+    background-color: crimson;
+    border-radius: 2rem;
 }
 .navbg{
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.49);
-border-radius: 16px;
+border-radius: 0.2rem;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(3.2px);
 -webkit-backdrop-filter: blur(3.2px);
@@ -95,4 +98,16 @@ backdrop-filter: blur(3.2px);
   .btn-4 span:hover:after {
     width: 100%;
   }
+
+
+
+
+
+
+
+
+
+
+
+
   
