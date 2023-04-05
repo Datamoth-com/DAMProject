@@ -9,40 +9,59 @@ const Asset = () => {
     <div>  <section class="tilt">
       <div className='container'>
         <div className='row m-4 d-flex card-body row1'>  {/*  Asset details */}
-              <div className='col'>
-                <img src='http://picsum.photos/300/200' className='img-thumbnail' ></img> {/*asset image*/}
-              </div>
-              <div className='col-6 '>
-                <span>
-                <h1>Asset ID: Asset_ID</h1> <br></br>
-                <h3>Asset Name: Asset_Name</h3>  
-                <h3>Serial Number: Number</h3>     
-                <h3>Asset Type: Type</h3>     
-                <h3>Description:</h3>
-                <p>Description content of the asset</p></span>
+          <div className='col '>
+            <img src='http://picsum.photos/300/200' className='Timg  border border-2 rounded-4 m-2' ></img> {/*change aspect ratio*/}
+          </div>
+          <div className='col-6  border border-2 rounded-4'>
+            <span>
+              <table className='table  table-hover'>
+                <thead>
+                  <tr>
+                    <th scope="col"> <h3>Asset Name: </h3></th>
+                    <td>Asset Name</td>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Asset ID:</th>
+                    <td>Asset_ID</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Asset Type:</th>
+                    <td>Type</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Description:</th>
+                    <td>Description content of the asset</td>
+                  </tr>
+                  </tbody>
+                  </table></span>
 
 
-                       <div>
-                          <Link to="/Transfer">
-                            <button className="btn btn-primary">Transfer</button>
-                           </Link>
-                        </div>
-
-
-   
+            <div>
+              <Link to="/Transfer">
+                <button className="btn btn-primary">Transfer</button>
+              </Link>
             </div>
-           
+
+
+
+          </div>
+
         </div>
 
-      </div>   
-      
+      </div>
 
-    
-  
-</section>
+
+
+
+    </section>
       <div>
         <h1 className='heading'>Asset Ownership Timeline</h1>
-        <Timeline/>
+        <Timeline />
       </div>
 
 
