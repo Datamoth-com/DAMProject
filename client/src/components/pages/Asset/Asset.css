@@ -1,4 +1,3 @@
-
 #divheight {
   height: 120px;
 }
@@ -72,4 +71,11 @@ section h1 {
   section h1 {
     font-size: 2rem;
   }
+}
+
+
+.Timg{
+  padding: auto;
+  height: 18rem;
+  width: 30rem;
 }
