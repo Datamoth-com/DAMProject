@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { ConnectWallet} from "@thirdweb-dev/react";
 
 import "./Navbar.css"
 
@@ -26,8 +27,9 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <Link to="/create">
-                            <button className='btn btn-danger me-2'>Create</button>
+                            <button className='btn btn-danger me-4'>Create</button>
                         </Link>
+                        <ConnectWallet/>
 
                
                         

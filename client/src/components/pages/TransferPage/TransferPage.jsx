@@ -2,8 +2,8 @@ import React from 'react'
 import "./TransferPage.css"
 const TransferPage = () => {
   return (
-    <div className='m-5 '>
-        
+    <div>
+        <h1 className='heading'>TRANSFER</h1>
         
         <div className="container border border-5 rounded-4 p-5 formbg ">
 

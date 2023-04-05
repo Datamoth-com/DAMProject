@@ -1,7 +1,8 @@
 import React from 'react'
 import "./homePage.css";
 import { Carousal } from '../../Carousal/Carousal';
-import { ConnectWallet} from "@thirdweb-dev/react";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -12,17 +13,52 @@ const HomePage = () => {
   return (
     <>
       <div > 
-        <Carousal />
-        <div className='container p-5 '>
-          <div className='d-flex'>
-          <h1 style={{textTransform: "uppercase", margin: '1rem'}}>What does D.A.M. do?</h1>
-          </div>
-          <div className='d-flex' style={{margin: '3rem'}}>
-            <h5>The Decentralized Asset Manager in a application that helps people to create,transfer and manage their assets </h5>
-                <ConnectWallet />
-                
-          </div>
+       
+        
+
+
+        <div className="jumbotron">
+      <div className="container">  
+        <div className="main">
+          <h1>Register your assets</h1>
+          <Link to="/create" className="btn-main">
+          Register</Link>
+          
         </div>
+      </div>
+    </div>
+  
+
+
+    <div><Carousal /></div>
+    
+
+    <div className="supporting">
+      <div className="container">
+        <div className="col">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg"/>
+          <h2>Create</h2>
+          <p>Register your assets</p>
+          <Link to="/create" className="btn-default">Learn More</Link>
+          
+        </div>
+        <div className="col">
+          <img src="https://img.icons8.com/ios-filled/256/visible--v1.png"/>
+          <h2>View</h2>
+          <p>View your assets and manage them</p>
+          <Link to="/assetList" className="btn-default">Learn More</Link>
+          
+        </div>
+        <div className="col">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg"/>
+          <h2>Transfer</h2>
+          <p>Transfer your assets to others</p>
+          <Link to="/history" className="btn-default">Learn More</Link>
+          
+        </div>
+      </div>
+      <div className="clearfix"></div>
+    </div>
         
       </div>
     </>

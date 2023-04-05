@@ -2,9 +2,11 @@ import React from 'react'
 
 const Create = () => {
   return (
-    <div><br></br>
+    <div>
+      <h1 className='heading'>REGISTRATION</h1><br></br>
 
       <div className="container border border-5 rounded-4 formbg">
+        
 
 
         <form method='POST'>

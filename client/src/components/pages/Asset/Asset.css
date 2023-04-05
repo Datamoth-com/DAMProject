@@ -6,10 +6,7 @@
   height:20rem;
 }
 
-img {
- 
-  height: 240px; ;
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,9 +41,9 @@ section h1 {
   text-transform: uppercase;
 }
 .heading{
-  font-size: 70px;
+  font-size: 5rem;
   font-weight: 600;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Raleway', sans-serif;
   background-image: linear-gradient(to RIGHT bottom, #000000, #eef7f1);
   color: transparent;
   background-clip: text;

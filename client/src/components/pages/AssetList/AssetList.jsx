@@ -3,7 +3,7 @@ import { AssetCard } from '../../AssetCard/AssetCard';
 
 const AssetList = () => {
   return (
-    <div>AssetList
+    <div>
         <div className='d-flex flex-wrap'> 
         
         <AssetCard/>

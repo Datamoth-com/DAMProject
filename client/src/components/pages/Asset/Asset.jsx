@@ -13,11 +13,13 @@ const Asset = () => {
                 <img src='http://picsum.photos/300/200' className='img-thumbnail' ></img> {/*asset image*/}
               </div>
               <div className='col-6 '>
+                <span>
                 <h1>Asset ID: Asset_ID</h1> <br></br>
                 <h3>Asset Name: Asset_Name</h3>  
                 <h3>Serial Number: Number</h3>     
                 <h3>Asset Type: Type</h3>     
-                <h3>Description: wzesxrdctfvyftgvuybhinjuok</h3>
+                <h3>Description:</h3>
+                <p>Description content of the asset</p></span>
 
 
                        <div>

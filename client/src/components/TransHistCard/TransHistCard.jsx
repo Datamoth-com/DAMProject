@@ -8,6 +8,8 @@ export const TransHistCard = () => {
       <div className="card-content">
         <h1>Asset Name</h1>
         <h4>Asset ID</h4>
+        <h5>Timestamp</h5>
+        <h5>owned/transfered</h5>  
       </div>
     </div>
   )
