@@ -3,21 +3,22 @@ import "./AssetCard.css"
 
 import { Link } from "react-router-dom"
 
-export const AssetCard = () => {
+export const AssetCard = ({ asset }) => {
   return (
     <div>
       <div className="card m-4 p-3">
-      <img src={"http://picsum.photos/300/200"} alt="Card image" className="card-image " />
-      <div className="card-content">
-        <h1>Asset Name</h1>
-        <h4>Asset ID</h4>
-        <Link to="/asset" className="btn btn-primary">View</Link>
+        <img src={asset.metadata.image} alt="Card image" className="card-image " />
+        <div className="card-content">
+          <h5>{asset.metadata.name}</h5>
+          <h6>id: {asset.metadata.id}</h6>
+          <Link
+            to={`/asset/${asset.metadata.id}`}
+            className="btn btn-primary">
+            view
+          </Link>
+        </div>
       </div>
-    </div>
 
-
-     
-   
     </div>
   )
 }

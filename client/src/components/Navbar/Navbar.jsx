@@ -7,7 +7,6 @@ import "./Navbar.css"
 const Navbar = () => {
     return (
         <>
-       
             <nav className="navbar navbar-expand-lg navbg  sticky-top  ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/" style={{fontFamily: 'Times New Roman', color: "crimson",fontSize:'2rem'}}>D.A.M.</a>
@@ -31,10 +30,6 @@ const Navbar = () => {
                         </Link>
                         <ConnectWallet/>
 
-               
-                        
-                           
-                        
                     </div>
                 </div>
             </nav>

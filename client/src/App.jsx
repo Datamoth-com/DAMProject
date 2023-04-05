@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/" element={<HomePage/>} />
           <Route exact path="/create" element={<Create />} />
           <Route exact path="/assetList" element={<AssetList/>} />
-          <Route exact path="/asset" element={<Asset/>} />
+          <Route exact path="/asset/:id" element={<Asset />} />
           <Route exact path="/history" element={<TransHist />} />
           <Route exact path="/login" element={<LoginSignUp />} />
           <Route exact path="/Transfer" element={<TransferPage/>}/>
