@@ -39,7 +39,7 @@ function App() {
           <Route exact path="/asset/:id" element={<Asset />} />
           <Route exact path="/history" element={<TransHist />} />
           <Route exact path="/login" element={<LoginSignUp />} />
-          <Route exact path="/Transfer" element={<TransferPage/>}/>
+          <Route exact path="/transfer/:id" element={<TransferPage/>}/>
           <Route exact path="/Test" element={<Test  />}/>
         </Routes>
        <  Footer />
