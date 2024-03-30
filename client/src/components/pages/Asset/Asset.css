@@ -79,3 +79,8 @@ section h1 {
   height: 18rem;
   width: 30rem;
 }
+
+.fixed-size-image {
+  width: 250px;
+  height: 250px;
+}

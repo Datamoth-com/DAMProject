@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-
-//Thirdweb
-import { useMintNFT, useContract, Web3Button, useAddress } from "@thirdweb-dev/react";
+import React, { useState } from 'react';
+import { useMintNFT, useContract, useAddress , useWallet, Web3Button} from "@thirdweb-dev/react";
+import fs from 'fs'; // Import 'fs' module to read the image file
 
 const Create = () => {
   const [collectionAddress, setCollectionAddress] = useState('');
@@ -14,14 +13,35 @@ const Create = () => {
   const address = useAddress();
   const contractAddress = collectionAddress;
   const { contract } = useContract(contractAddress);
-  const { mutateAsync: mintNft, isLoading, error } = useMintNFT(contract);
+  const { mutateAsync: mintTo, isLoading, error } = useMintNFT(contract);
+
+  const handleMintNFT = async () => {
+    // Address of the wallet you want to mint the NFT to
+    const walletAddress = useAddress();
+
+    // Custom metadata of the NFT
+    const metadata = {
+      name: assetName,
+      description: assetDesc,
+      image: assetImage // Reading image file
+    };
+
+    try {
+      // Minting the NFT
+      const tx = await contract.erc721.mintTo(walletAddress, metadata);
+      const receipt = tx.receipt; // the transaction receipt
+      const tokenId = tx.id; // the id of the NFT minted
+      const nft = await tx.data(); // (optional) fetch details of minted NFT
+    } catch (error) {
+      console.error("Error minting NFT:", error);
+    }
+  };
 
   return (
     <div>
-      <h1 className='heading'>Create Asset</h1><br></br>
+      <h1 className='heading'>Create Asset</h1><br />
 
       <div className="container border border-5 rounded-4 formbg">
-
         <div>
           <br />
           <div className="mb-3">
@@ -48,7 +68,7 @@ const Create = () => {
 
           <div className='mb-3'>
             <label htmlFor="exampleFormControlTextarea1" className="form-label text-white">Asset Category:</label>
-            <select  onChange={e => setAssetCategory(e.target.value)} value={assetCategory} placeholder='Select the type of asset' className="form-select" aria-label="Default select example">
+            <select onChange={e => setAssetCategory(e.target.value)} value={assetCategory} placeholder='Select the type of asset' className="form-select" aria-label="Default select example">
               <option defaultChecked></option>
               <option value="physical">Physical Asset</option>
               <option value="digital">Digital Assets/Docs</option>
@@ -64,26 +84,16 @@ const Create = () => {
               value={assetImage}
             />
           </div>
-          <br></br>
+          <br />
           <div>
-
-            <Web3Button
-              contractAddress={contractAddress}
-              action={() =>
-                mintNft({
-                  metadata: {
-                    name: assetName,
-                    description: assetDesc,
-                    image: assetImage, // Accepts any URL or File type
-                  },
-                  to: address, // Use useAddress hook to get current wallet address
-                })
-              }
-            >
+            
+            <Web3Button 
+            contractAddress={contractAddress} 
+            action={handleMintNFT()}>
               Mint NFT
             </Web3Button>
           </div>
-          <br></br>
+          <br />
         </div>
       </div>
     </div>

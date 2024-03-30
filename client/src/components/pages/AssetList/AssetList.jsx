@@ -35,7 +35,7 @@ const AssetList = () => {
     <>
       <div className='container mt-4'>
         <div className="mb-3">
-          <label htmlFor="exampleInput" className="form-label">Your Collection Address</label>
+          <label htmlFor="exampleInput" className="form-label">Your Collection Address:  0x0bD02D4C067981074f23289133bBf2764d75D650   BNB Smart Chain Testnet</label>
           <input type="text" className="form-control" onChange={e => setCollectionAddress(e.target.value)} />
           <div id="emailHelp" className="form-text">never share your Collection Address with anyone else.</div>
         </div>

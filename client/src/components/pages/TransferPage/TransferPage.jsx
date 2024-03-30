@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { useNFT, useContract, useTransferNFT, Web3Button, useAddress } from "@thirdweb-dev/react";
 
 const TransferPage = () => {
-  const contractAddress = "0xA16db66ec5cE6D42E4b22CbA6020367F9FeF676E"
+  const contractAddress = "0x0bD02D4C067981074f23289133bBf2764d75D650"
   const { contract } = useContract(contractAddress);
   const [asset, setAsset] = useState();
   const [recieverWalletAddress, setRecieverWalletAddress] = useState('');
@@ -14,10 +14,10 @@ const TransferPage = () => {
   const params = useParams();
   const { mutateAsync: transferNFT, isLoading, error, } = useTransferNFT(contract);
 
-  const { data } = useNFT(contract, params.id);
+  const { data : nft } = useNFT(contract, params.id);
   
   function getAsset(){
-    setAsset(data);
+    setAsset(nft);
   }
 
   useEffect(() => {

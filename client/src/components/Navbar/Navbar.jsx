@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { ConnectWallet} from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 import "./Navbar.css"
 

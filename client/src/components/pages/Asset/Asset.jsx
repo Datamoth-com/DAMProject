@@ -3,23 +3,29 @@ import { Timeline } from '../../Timeline/Timeline';
 import { Link, useParams } from 'react-router-dom';
 import "./Asset.css"
 // Thirdweb
-import { useNFT, useContract, useTransferNFT, Web3Button } from "@thirdweb-dev/react";
+import { useNFT, useContract, useTransferNFT, Web3Button,useAddress } from "@thirdweb-dev/react";
 
 
 
 const Asset = () => {
-  const walletAddress = "0xE3f40e003c926a2b546DbCd7716aa8559254fE82";
-  const { contract } = useContract("0xA16db66ec5cE6D42E4b22CbA6020367F9FeF676E");
+  const walletAddress = useAddress();
+  const { contract } = useContract("0x0bD02D4C067981074f23289133bBf2764d75D650");
   const { mutateAsync: transferNFT, isLoading, error, } = useTransferNFT(contract);
 
   const params = useParams();
   const [asset, setAsset] = useState();
 
   const getAssets = async () => {
-    const { data, isLoading, error } = await useNFT(contract, params.id);
-    setAsset(data);
-    console.log(asset);
+    try {
+      const tokenId = params.id;
+      const { data: nft, isLoading, error } = await useNFT(contract, params.id);
+      setAsset(nft); // Setting asset to nft, not data
+      console.log(nft); // Logging nft, not asset
+    } catch (error) {
+      console.error("Error fetching assets:", error);
+    }
   }
+  
   getAssets()
 
   return (
@@ -31,7 +37,7 @@ const Asset = () => {
               <div className='container'>
                 <div className='row m-4 d-flex card-body row1'>
                   <div className='col '>
-                    <img src={asset.metadata.image} className='Timg  border border-2 rounded-4 m-2' ></img> {/*change aspect ratio*/}
+                    <img src={asset.metadata.image} className='Timg border border-2 rounded-4 m-2 fixed-size-image' ></img> {/*change aspect ratio*/}
                   </div>
                   <div className='col-6  border border-2 rounded-4'>
                     <span>
@@ -49,20 +55,21 @@ const Asset = () => {
                             <td>{params.id}</td>
                           </tr>
 
-                          <tr>
+                          {/* <tr>
                             <th scope="row">Asset Category:</th>
-                            <td>{`${asset.metadata.attributes[0].trait_type} | ${asset.metadata.attributes[0].value}`}</td>
-                          </tr>
+                            <td>{`${asset.metadata.attributes[0]?.trait_type} | ${asset.metadata.attributes[0]?.value}`}</td>
+
+                          </tr> */}
 
                           <tr>
                             <th scope="row">Description:</th>
                             <td>{asset.metadata.description}</td>
                           </tr>
 
-                          <tr>
+                          {/* <tr>
                             <th scope="row">Asset Category Type:</th>
-                            <td>{asset.metadata.attributes[1].value}</td>
-                          </tr>
+                            <td>{asset.metadata.attributes[1]?.value}</td>
+                          </tr> */}
 
                         </tbody>
                       </table>
