@@ -50,8 +50,9 @@ const HomePage = () => {
           </div>
           <div className="clearfix"></div>
         </div>
-
+        
       </div>
+     
     </>
   )
 }

@@ -21,8 +21,9 @@ const Navbar = () => {
                             <li className="NLink">
                                 <Link className="nav-link active" aria-current="page" to="/assetList">Assets</Link>
                             </li>
+                          
                             <li className="NLink">
-                                <Link className="nav-link active" aria-current="page" to="/history">History</Link>
+                                <Link className="nav-link active" aria-current="page" to="/flist">Friends</Link>
                             </li>
                         </ul>
                         <Link to="/create">
